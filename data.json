@@ -1,0 +1,10 @@
+[
+    { "id": 1, "nombre": "Pintura Negra", "precio": 6000, "stock": 50, "categoria": "Pinturas" },
+    { "id": 2, "nombre": "Pintura Blanca", "precio": 4500, "stock": 30, "categoria": "Pinturas" },
+    { "id": 3, "nombre": "Pintura Universal", "precio": 5500, "stock": 20, "categoria": "Pinturas" },
+    { "id": 4, "nombre": "Pincel Fino", "precio": 1500, "stock": 100, "categoria": "Pinceles" },
+    { "id": 5, "nombre": "Pincel Ancho", "precio": 1800, "stock": 80, "categoria": "Pinceles" },
+    { "id": 6, "nombre": "Rodillo Estandar", "precio": 3000, "stock": 25, "categoria": "Rodillos" },
+    { "id": 7, "nombre": "Rodillo Profesional", "precio": 4000, "stock": 10, "categoria": "Rodillos" },
+    { "id": 8, "nombre": "Sellador", "precio": 7000, "stock": 0, "categoria": "Otros" }
+]

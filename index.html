@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinturest - Catalogo de Productos</title>
+
+    <!-- Toastify (CSS) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Librerias (van ANTES de main.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>🎨 Pinturest</h1>
+        <p>Catalogo de Productos</p>
+    </header>
+
+    <main>
+        <!-- FORMULARIO PARA AGREGAR PRODUCTOS -->
+        <section class="formulario">
+            <h2>Agregar Producto</h2>
+            <div class="form-grupo">
+                <input type="text" id="inputNombre" placeholder="Nombre del producto">
+                <input type="number" id="inputPrecio" placeholder="Precio">
+                <input type="number" id="inputStock" placeholder="Stock">
+                <select id="inputCategoria">
+                    <option value="">Selecciona una categoria</option>
+                    <option value="Pinturas">Pinturas</option>
+                    <option value="Pinceles">Pinceles</option>
+                    <option value="Rodillos">Rodillos</option>
+                    <option value="Otros">Otros</option>
+                </select>
+                <button id="btnAgregar">+ Agregar</button>
+            </div>
+        </section>
+
+        <!-- BARRA DE BUSQUEDA -->
+        <section class="busqueda">
+            <input type="text" id="inputBuscar" placeholder="Buscar producto...">
+        </section>
+
+        <!-- ESTADO DE CARGA (fetch con async/await) -->
+        <p id="cargando" class="cargando oculto">⏳ Cargando productos...</p>
+
+        <!-- CONTENEDOR DE PRODUCTOS -->
+        <section id="contenedor-productos"></section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #212529;
+}
+
+header {
+    background-color: #212529;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #aaa;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* FORMULARIO */
+.formulario {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.formulario h2 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.form-grupo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-grupo input,
+.form-grupo select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    flex: 1;
+    min-width: 150px;
+}
+
+.form-grupo button {
+    padding: 10px 20px;
+    background-color: #212529;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form-grupo button:hover {
+    background-color: #444;
+}
+
+/* BUSQUEDA */
+.busqueda {
+    margin-bottom: 20px;
+}
+
+.busqueda input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* CONTENEDOR DE PRODUCTOS */
+#contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.sin-resultados {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #555;
+    padding: 20px;
+}
+
+/* TARJETA DE PRODUCTO */
+.producto-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: transform 0.2s;
+}
+
+.producto-card:hover {
+    transform: translateY(-3px);
+}
+
+.producto-card h3 {
+    font-size: 1.1rem;
+    color: #212529;
+}
+
+.producto-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.producto-card .precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #198754;
+}
+
+.producto-card .categoria {
+    font-size: 0.85rem;
+    background-color: #f0f0f0;
+    padding: 3px 8px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.producto-card button {
+    margin-top: auto;
+    padding: 8px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.producto-card button:hover {
+    background-color: #b02a37;
+}
+
+/* ESTADO DE CARGA */
+.oculto {
+    display: none;
+}
+
+.cargando {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
